@@ -1,0 +1,14 @@
+<div class="container">
+    <h3>List Of All Vehicles</h3>
+    <div class="main" *ngFor="let vehicle of vehicleList.carData">
+        <p>Name : <span>{{vehicle.name}}</span></p>
+        <p>Category : <span>{{vehicle.category}}</span></p>
+        <p>Color : <span>{{vehicle.color}}</span></p>
+        <p>Fuel Type : <span>{{vehicle.fuel_type}}</span></p>
+        <p>Model : <span>{{vehicle.model}}</span></p>
+        <div class="btn-div">
+            <button [routerLink]="['/category', vehicle.category]">Category</button>
+            <button [routerLink]="['detail', vehicle.id]">Detail</button>
+        </div>
+    </div>
+</div>

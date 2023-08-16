@@ -1,0 +1,54 @@
+.container{
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 80px;
+}
+.main{
+    width: 540px;
+    height: 200px;
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.main p{
+    width: 100%;
+    color: gray;
+}
+.main p span{
+    color: black;
+}
+.btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 10px;
+}
+.btn-div button{
+    width: 120px;
+    background-color: #1877F2;
+    color: white;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn-div button:hover{
+    background-color: #115cbe;
+}
+h3{
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    color: gray;
+    font-weight: 600;
+}
+

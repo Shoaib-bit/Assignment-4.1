@@ -1,0 +1,62 @@
+.container{
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px;
+    position: relative;
+   
+}
+.btn{
+    width: 640px;
+    min-height: 200px;
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+.btn div{
+    width: 48%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.btn div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 520px;
+    height: 200px;
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+.box p{
+    width: 100%;
+    color: gray;
+}
+.box p span{
+    color: black;
+}

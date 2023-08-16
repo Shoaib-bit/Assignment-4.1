@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="btn" *ngIf="check" >
+        <div *ngFor="let temp of vehicleData.category,let i=index" [routerLink]="['/category', temp]" (click) = "check = false">{{temp}}</div>
+    </div>
+    <div class="main" *ngIf="!check" >
+        <div *ngFor="let vehicle of vehicleData.carData" class="box-inside">
+            <div class="box" *ngIf="category == vehicle.category">
+                <p>Name : <span>{{vehicle.name}}</span></p>
+                <p>Category : <span>{{vehicle.category}}</span></p>
+                <p>Color : <span>{{vehicle.color}}</span></p>
+                <p>Fuel Type : <span>{{vehicle.fuel_type}}</span></p>
+                <p>Model : <span>{{vehicle.model}}</span></p>
+            </div>
+        </div>
+    </div>
+</div>
