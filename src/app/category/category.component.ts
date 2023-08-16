@@ -9,15 +9,17 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CategoryComponent implements OnInit{
   check = true;
-  category: any; 
+  index: any; 
       constructor(public vehicleData : VehiclesService,
                   private activteRoute : ActivatedRoute) {
             this.activteRoute.paramMap.subscribe((dta)=>{
-              this.category = dta.get('category');
-              console.log(this.category);
-              if(this.category != null) {
+
+              this.index = dta.get('category');
+              console.log(this.index);
+              if(this.index != null) {
                 this.check = false;
               }
+             
             })
       }
 

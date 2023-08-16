@@ -7,7 +7,7 @@
         <p>Fuel Type : <span>{{vehicle.fuel_type}}</span></p>
         <p>Model : <span>{{vehicle.model}}</span></p>
         <div class="btn-div">
-            <button [routerLink]="['/category', vehicle.category]">Category</button>
+            <button [routerLink]="['/category', vehicle.category_id]">Category</button>
             <button [routerLink]="['detail', vehicle.id]">Detail</button>
         </div>
     </div>

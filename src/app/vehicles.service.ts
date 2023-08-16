@@ -15,6 +15,7 @@ export class VehiclesService {
       price: '$2814.46',
       category: 'SUV',
       fuel_type: 'Gasoline',
+      category_id : 1,
       description: 'Reliable SUV, great mileage, perfect for outdoor adventures.',
     },
     {
@@ -24,6 +25,7 @@ export class VehiclesService {
       model: 2008,
       price: '$1731.98',
       category: 'Sedan',
+      category_id : 2,
       fuel_type: 'Diesel',
       description: 'Elegant sedan, advanced features, excellent fuel efficiency.',
     },
@@ -34,6 +36,7 @@ export class VehiclesService {
       model: 2003,
       price: '$2238.35',
       category: 'Sedan',
+      category_id : 2,
       fuel_type: 'Gasoline',
       description: 'Classic sedan design, reliable performance, suitable for daily commute.',
     },
@@ -45,6 +48,7 @@ export class VehiclesService {
       price: '$2732.99',
       category: 'SUV',
       fuel_type: 'Gasoline',
+      category_id : 1,
       description: 'Powerful SUV, bold design, capable off-road vehicle.',
     },
     {
@@ -54,6 +58,7 @@ export class VehiclesService {
       model: 2002,
       price: '$3849.47',
       category: 'Sedan',
+      category_id : 2,
       fuel_type: 'Gasoline',
       description: 'Sporty sedan, unique design, impressive performance and handling.',
     },
@@ -64,6 +69,7 @@ export class VehiclesService {
       model: 2009,
       price: '$1252.30',
       category: 'SUV',
+      category_id : 1,
       fuel_type: 'Gasoline',
       description: 'Spacious SUV, comfortable interior, ideal for family trips.',
     },
@@ -74,6 +80,7 @@ export class VehiclesService {
       model: 1994,
       price: '$1762.42',
       category: 'Van',
+      category_id : 3,
       fuel_type: 'Diesel',
       description: 'Classic van, reliable and versatile transportation solution.',
     },
@@ -84,6 +91,7 @@ export class VehiclesService {
       model: 2004,
       price: '$1081.40',
       category: 'SUV',
+      category_id : 1,
       fuel_type: 'Diesel',
       description: 'Sturdy SUV, rugged design, suitable for off-road exploration.',
     },
@@ -94,6 +102,7 @@ export class VehiclesService {
       model: 2008,
       price: '$1258.99',
       category: 'Sedan',
+      category_id : 2,
       fuel_type: 'Gasoline',
       description: 'Luxurious sedan, refined features, delivers a premium driving experience.',
     },
@@ -104,6 +113,7 @@ export class VehiclesService {
       model: 1994,
       price: '$3822.92',
       category: 'Coupe',
+      category_id : 4,
       fuel_type: 'Gasoline',
       description: 'Classic coupe, sporty appearance, offers exhilarating performance.',
     },
@@ -114,6 +124,7 @@ export class VehiclesService {
       model: 2010,
       price: '$3963.20',
       category: 'Minivan',
+      category_id : 6,
       fuel_type: 'Gasoline',
       description: 'Spacious minivan, modern features, perfect for family journeys.',
     },
@@ -124,6 +135,7 @@ export class VehiclesService {
       model: 2012,
       price: '$1144.27',
       category: 'SUV',
+      category_id : 1,
       fuel_type: 'Diesel',
       description: 'Premium SUV, luxurious interior, advanced technology.',
     },
@@ -134,6 +146,7 @@ export class VehiclesService {
       model: 1989,
       price: '$1386.49',
       category: 'Convertible',
+      category_id : 5,
       fuel_type: 'Gasoline',
       description: 'Classic convertible, elegant design, a timeless icon.',
     },
@@ -144,6 +157,7 @@ export class VehiclesService {
       model: 2012,
       price: '$1366.96',
       category: 'Convertible',
+      category_id : 5,
       fuel_type: 'Gasoline',
       description: 'Modern convertible, Scandinavian design, advanced safety features.',
     },
@@ -154,6 +168,7 @@ export class VehiclesService {
       model: 2006,
       price: '$1221.46',
       category: 'SUV',
+      category_id : 1,
       fuel_type: 'Gasoline',
       description: 'Stylish SUV, comfortable interior, versatile for city and outdoor drives.',
     },
@@ -164,6 +179,7 @@ export class VehiclesService {
       model: 1996,
       price: '$1877.63',
       category: 'Van',
+      category_id : 3,
       fuel_type: 'Diesel',
       description: 'Durable van, reliable performance, suitable for various purposes.',
     },
@@ -174,15 +190,35 @@ export class VehiclesService {
       model: 2003,
       price: '$2646.55',
       category: 'Sedan',
+      category_id : 2,
       fuel_type: 'Gasoline',
       description: 'Luxury sedan, iconic brand, combines style and comfort.',
     },
     ];
     category = [
-      'SUV',
-      'Sedan',
-      'Van',
-      'Coupe',
-      'Convertible'
+      {
+         id : 1,
+         name : 'SUV'
+      },
+      {
+        id : 2,
+        name : 'Sedan'
+      },
+      {
+        id : 3,
+        name : 'Van'
+      },
+      {
+        id : 4,
+        name : 'Coupe'
+      },
+      {
+        id : 5,
+        name : 'Convertible'
+      },
+      {
+        id : 6,
+        name : 'Minivan'
+      }
     ]
 }
